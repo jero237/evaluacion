@@ -1,1 +1,2 @@
-Algorith that generates Bingo cards.
+#About this file
+Algorithm that generates Bingo cards.

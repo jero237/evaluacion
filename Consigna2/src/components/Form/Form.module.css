@@ -1,0 +1,26 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  gap: 1rem;
+  /* padding: 2rem; */
+  justify-content: center;
+  max-width: 90%;
+  width: 500px;
+  padding: 2rem;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  align-self: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .Form {
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+}

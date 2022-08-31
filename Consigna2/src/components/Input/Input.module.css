@@ -1,0 +1,58 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.input:focus {
+  outline: 1px solid #6200ee;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.inputError {
+  border-color: #b00020;
+  transition: 0.4s ease;
+}
+
+.errorLabel {
+  transition: 0.4s ease;
+  color: #b00020;
+  font-size: 0.8rem;
+  opacity: 0%;
+}
+
+.label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 1px;
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .input {
+    border-color: #fff;
+    color: #fff;
+  }
+  .input:focus {
+    outline-color: #bb86fc;
+  }
+  .inputError {
+    border-color: #cf6679;
+  }
+  .errorLabel {
+    color: #cf6679;
+  }
+  .label {
+    background-color: #1e1e1e;
+  }
+}

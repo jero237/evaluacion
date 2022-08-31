@@ -1,7 +1,7 @@
 import styles from './Button.module.css'
 
-export default function Button({ children, disabled, type }) {
+export default function Button({ children, ...props }) {
     return (
-        <button className={styles.button} disabled={disabled} type={type} >{children}</button>
+        <button className={styles.button} {...props} >{children}</button>
     )
 }

@@ -13,7 +13,7 @@ export default function Input({ ...props }) {
                 {...props}
                 className={`${styles.input} ${meta.touched && meta.error && styles.inputError}`}
             />
-            <label className={styles.errorLabel} style={{ opacity: meta.touched && meta.error ? 100 : 0 }} >{meta.error}<span>&nbsp;&nbsp;</span></label>
+            <label className={styles.errorLabel} style={{ opacity: meta.touched && meta.error ? 100 : 0 }} >{meta.error}&nbsp;</label>
         </div >
     )
 }

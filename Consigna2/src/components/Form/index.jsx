@@ -12,7 +12,7 @@ export default function RegisterForm() {
         <Formik
             initialValues={{ name: '', email: '', password: '', textArea: '' }}
             validate={formValidation}
-            onSubmit={values => showAlert("Form validated successfully", JSON.stringify(values), "success")}
+            onSubmit={values => showAlert("Form successfully validated", JSON.stringify(values), "success")}
         >
             <Form className={styles.Form}>
                 <h3 className={styles.title}>Form</h3>
